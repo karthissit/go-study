@@ -6,6 +6,7 @@ Start with :
 Starting point is main() function. Triggerd from proc.main ==> a process
 
 go mod init example.com //go mod init <module name>
+
 go get golang.org/x/exp/constraints //go get <external module name>
 
 go.work -> file
