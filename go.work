@@ -3,4 +3,9 @@ go 1.21.4
 use(
     .
     ./greeting
+    ./conditionals
+    ./ds
+    ./loops
+    ./numbers
+    ./str
 )
