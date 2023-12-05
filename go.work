@@ -8,4 +8,6 @@ use(
     ./loops
     ./numbers
     ./str
+    ./structexample
+    ./pointerexample
 )
