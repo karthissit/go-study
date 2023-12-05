@@ -9,6 +9,7 @@ import (
 	"example.com/greeting"
 	"example.com/loops"
 	"example.com/numbers"
+	"example.com/pointerexample"
 	"example.com/str"
 	"rsc.io/quote"
 )
@@ -46,5 +47,8 @@ func main() {
 	fmt.Println(quote.Hello())
 	fmt.Println(quote.Opt())
 	fmt.Println(quote.Go())
+
+	//test pointers
+	pointerexample.Testintegerpointer()
 
 }
