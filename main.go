@@ -10,7 +10,10 @@ import (
 	"example.com/loops"
 	"example.com/numbers"
 	"example.com/str"
+	"rsc.io/quote"
 )
+
+const PI = 3.14
 
 func main() {
 
@@ -35,5 +38,13 @@ func main() {
 
 	//ds
 	ds.Datastructures()
+
+	fmt.Printf("DEFINED CONSTANT: PI is %f\n", PI)
+
+	//Using external modules
+	fmt.Println(quote.Glass())
+	fmt.Println(quote.Hello())
+	fmt.Println(quote.Opt())
+	fmt.Println(quote.Go())
 
 }
