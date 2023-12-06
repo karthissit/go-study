@@ -3,17 +3,15 @@ package pointerexample
 import "fmt"
 
 func Testintegerpointer() {
-
 	x := 5
-
-	y := &x
-
 	fmt.Println("Mofifying x directly: ", modifyX(x))
 	fmt.Println("after modification x directly: ", x)
 
-	fmt.Println("X is: ",x)
-	fmt.Println("X address is: ",&x)
-	fmt.Println("Y is: ",y)
+	fmt.Println("X is: ", x)
+	fmt.Println("X address is: ", &x)
+	//pointer
+	y := &x
+	fmt.Println("Y is: ", y)
 
 	fmt.Printf("Before modification %d\n", x)
 	modify(y)
@@ -21,9 +19,9 @@ func Testintegerpointer() {
 
 }
 
-func modifyX(x int) int {
-	x = 9
-	return x
+func modifyX(i int) int {
+	i = 9
+	return i
 }
 
 func modify(y *int) *int {
