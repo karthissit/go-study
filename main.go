@@ -11,6 +11,7 @@ import (
 	"example.com/numbers"
 	"example.com/pointerexample"
 	"example.com/str"
+	"example.com/structexample"
 	"rsc.io/quote"
 )
 
@@ -50,5 +51,29 @@ func main() {
 
 	//test pointers
 	pointerexample.Testintegerpointer()
+
+	//Structures and interfaces
+	emp1 := structexample.Employee{
+		Name:             "Karthikeyan",
+		Designation:      "TS",
+		Id:               1234,
+		PresentationName: "GoLang",
+	}
+
+	stu1 := structexample.Student{
+		Name:           "Khatvik",
+		Class:          "LKG",
+		Id:             123123,
+		AggregateScore: 87.23,
+	}
+
+	empMessage := emp1.Describe()
+	stuMessage := stu1.Describe()
+
+	fmt.Printf("Employee Message: %v\n", empMessage)
+	fmt.Printf("Student Message: %v\n", stuMessage)
+
+	emp1.PresentSomething()
+	stu1.DisplayScore()
 
 }
