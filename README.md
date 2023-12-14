@@ -97,3 +97,7 @@ root@karthn go-study]# go build -o gostudy.exe  ==> This will create an executab
 
 
 
+If you want to reset the target GOOS and GOARCH:
+-----------------------------------------------
+unset GOOS
+unset GOARCH
