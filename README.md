@@ -25,7 +25,7 @@ use: go mod init module_name
 and update go.work file
 
 
-CREATING BUILD FILE FOR OTHER OS ENVIRONMENTS:
+Creating build file for other OS and Platforms:
 ===============================================
 
 The GOARCH environment variable in Go specifies the target architecture for compilation. The common values include:
@@ -88,9 +88,11 @@ This command will display a list of supported combinations for GOOS and GOARCH. 
 
 
 example: I am trying to build the software from linux to windows
-
+-----------------------------------------------------------------
 root@karthn go-study]# export GOOS=windows
+
 root@karthn go-study]# export GOARCH=amd64
+
 root@karthn go-study]# go build -o gostudy.exe  ==> This will create an executable that could be run on windows machine with x64 architecture
 
 
